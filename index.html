@@ -160,19 +160,21 @@
 <body>
     <div id="root"></div>
     <script type="text/babel" data-type="module">
-        import { initializeApp } from "https://gs.jurieo.com/gemini/gstatic/firebasejs/11.1.0/firebase-app.js";
-        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://gs.jurieo.com/gemini/gstatic/firebasejs/11.1.0/firebase-auth.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
         import { initializeFirestore, persistentLocalCache, getFirestore, collection, doc, setDoc, getDoc, getDocs, addDoc, updateDoc, deleteDoc, onSnapshot, serverTimestamp, query, orderBy, limit } from "https://gs.jurieo.com/gemini/gstatic/firebasejs/11.1.0/firebase-firestore.js";
 
         const { useState, useEffect, useRef, useMemo, memo, useCallback, useDeferredValue } = React;
 
         const firebaseConfig = {
-          apiKey: "AIzaSyA-bOghSL8apcO6NEda6nc_-_UO6-h9SDs",
-          authDomain: "video-b02b3.firebaseapp.com",
-          projectId: "video-b02b3",
-          storageBucket: "video-b02b3.firebasestorage.app",
-          messagingSenderId: "25339039789",
-          appId: "1:25339039789:web:6bc5a86b6e2cf39a1f68a4"
+           apiKey: "AIzaSyDtLwWRgFlMoZBY2jX5N9pYag8EblCZYJc",
+           authDomain: "cvid-6e2e3.firebaseapp.com",
+           databaseURL: "https://cvid-6e2e3-default-rtdb.firebaseio.com",
+           projectId: "cvid-6e2e3",
+           storageBucket: "cvid-6e2e3.firebasestorage.app",
+           messagingSenderId: "993823367027",
+           appId: "1:993823367027:web:9c2b684fdcd1b4e7adaf06",
+           measurementId: "G-E543E5PCG0"
         };
         
         const app = initializeApp(firebaseConfig);
